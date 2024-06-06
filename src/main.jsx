@@ -17,35 +17,35 @@ import { theme } from "./theme";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "react-material-dashboard/",
     element: <Dashboard />,
   },
   {
-    path: "dashboard",
+    path: "react-material-dashboard/dashboard",
     element: <Dashboard />,
   },
   {
-    path: "tables",
+    path: "react-material-dashboard/tables",
     element: <Tables />,
   },
   {
-    path: "notifications",
+    path: "react-material-dashboard/notifications",
     element: <Notifications />,
   },
   {
-    path: "billing",
+    path: "react-material-dashboard/billing",
     element: <Billing />,
   },
   {
-    path: "profile",
+    path: "react-material-dashboard/profile",
     element: <Profile />,
   },
   {
-    path: "sign-in",
+    path: "react-material-dashboard/sign-in",
     element: <SignIn />,
   },
   {
-    path: "sign-up",
+    path: "react-material-dashboard/sign-up",
     element: <SignUp />,
   },
 ]);

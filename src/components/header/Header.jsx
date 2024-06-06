@@ -13,7 +13,7 @@ const Header = (props) => {
     <section className="header">
       <div className="locate">
         <div className="detail">
-          <a href="/dashboard">
+          <a href="../react-material-dashboard/dashboard">
             <HomeIcon />
           </a>
           <p>/</p>

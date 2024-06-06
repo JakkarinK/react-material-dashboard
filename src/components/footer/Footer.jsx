@@ -15,7 +15,7 @@ const Footer = () => {
         <Box>
           <Typography variant="span">
             © 2024, made with by{" "}
-            <Link href="#" underline="none" color={"rgb(52, 71, 103)"}>
+            <Link href="https://www.creative-tim.com/product/material-dashboard-react-nodejs" underline="none" color={"rgb(52, 71, 103)"}>
               Creative Tim
             </Link>{" "}
             for a better web.

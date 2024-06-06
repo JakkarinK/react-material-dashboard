@@ -20,12 +20,12 @@ const Nav = (props) => {
   return (
     <Box sx={{ display: { xs: "none", md: "block" } }}>
       <nav>
-        <a className="brand" href="/dashboard">
+        <a className="brand" href="../react-material-dashboard/dashboard">
           <h1>Material Dashboard 2</h1>
         </a>
         <hr />
         <NavLink
-          to={"/dashboard"}
+          to={"../react-material-dashboard/dashboard"}
           className={({ isActive }) => (isActive ? activeClassName : undefined)}
         >
           <div className="item">
@@ -34,7 +34,7 @@ const Nav = (props) => {
           </div>
         </NavLink>
         <NavLink
-          to={"/tables"}
+          to={"../react-material-dashboard/tables"}
           className={({ isActive }) => (isActive ? activeClassName : undefined)}
         >
           <div className="item">
@@ -43,7 +43,7 @@ const Nav = (props) => {
           </div>
         </NavLink>
         <NavLink
-          to={"/billing"}
+          to={"../react-material-dashboard/billing"}
           className={({ isActive }) => (isActive ? activeClassName : undefined)}
         >
           <div className="item">
@@ -52,7 +52,7 @@ const Nav = (props) => {
           </div>
         </NavLink>
         <NavLink
-          to={"/notifications"}
+          to={"../react-material-dashboard/notifications"}
           className={({ isActive }) => (isActive ? activeClassName : undefined)}
         >
           <div className="item">
@@ -61,7 +61,7 @@ const Nav = (props) => {
           </div>
         </NavLink>
         <NavLink
-          to={"/profile"}
+          to={"../react-material-dashboard/profile"}
           className={({ isActive }) => (isActive ? activeClassName : undefined)}
         >
           <div className="item">
@@ -70,7 +70,7 @@ const Nav = (props) => {
           </div>
         </NavLink>
         <NavLink
-          to={"/sign-in"}
+          to={"../react-material-dashboard/sign-in"}
           className={({ isActive }) => (isActive ? activeClassName : undefined)}
         >
           <div className="item">
@@ -79,7 +79,7 @@ const Nav = (props) => {
           </div>
         </NavLink>
         <NavLink
-          to={"/sign-up"}
+          to={"../react-material-dashboard/sign-up"}
           className={({ isActive }) => (isActive ? activeClassName : undefined)}
         >
           <div className="item">

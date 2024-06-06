@@ -50,7 +50,7 @@ const SignIn = () => {
         >
           <Link
             underline="none"
-            href="/"
+            href="../react-material-dashboard/"
             color={"rgb(52, 71, 103)"}
             variant="h6"
           >
@@ -58,7 +58,7 @@ const SignIn = () => {
           </Link>
           <Box display={"flex"} gap={2.5}>
             <Link
-              href="/dashboard"
+              href="../react-material-dashboard/dashboard"
               underline="none"
               sx={{
                 display: "flex",
@@ -71,7 +71,7 @@ const SignIn = () => {
               Dashboard
             </Link>
             <Link
-              href="/profile"
+              href="../react-material-dashboard/profile"
               underline="none"
               sx={{
                 display: "flex",
@@ -84,7 +84,7 @@ const SignIn = () => {
               Profile
             </Link>
             <Link
-              href="/sign-up"
+              href="../react-material-dashboard/sign-up"
               underline="none"
               sx={{
                 display: "flex",
@@ -97,7 +97,7 @@ const SignIn = () => {
               Sign Up
             </Link>
             <Link
-              href="sign-in"
+              href="../react-material-dashboard/sign-in"
               underline="none"
               sx={{
                 display: "flex",
