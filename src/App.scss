@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f0f2f5;
+}
+hr {
+  flex-shrink: 0;
+  border-top: 0px solid rgba(0, 0, 0, 0.12);
+  border-right: 0px solid rgba(0, 0, 0, 0.12);
+  border-left: 0px solid rgba(0, 0, 0, 0.12);
+  background-color: transparent;
+  height: 0.0625rem;
+  margin: 1rem 0px;
+  border-bottom: none;
+  opacity: 0.25;
+  background-image: linear-gradient(
+    to right,
+    rgba(52, 71, 103, 0),
+    rgba(52, 71, 103, 0.4),
+    rgba(52, 71, 103, 0)
+  ) !important;
+}
+.grid {
+  display: grid;
+  grid-template: "n s" / calc(300px + 1rem);
+  gap: 1rem;
+}
+@media screen and (max-width: 900px){
+  .grid{
+    display: block;
+  }
+}
+nav {
+  grid-area: n;
+}
+section {
+  grid-area: s;
+  margin: 1rem;
+}
+.container {
+  width: 100%;
+}
+.box {
+  margin: 1rem 0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem,
+    rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
+}
+
+// section.dashboard {
+//   height: 100%;
+//   .chart-box {
+//     position: relative;
+//     background-color: #fff;
+//     padding: 0 1rem 1rem;
+//     margin-top: 1rem;
+//     border-radius: 10px;
+//     box-shadow: rgba(0, 0, 0, 0.1) 0rem 0.25rem 0.375rem -0.0625rem,
+//       rgba(0, 0, 0, 0.06) 0rem 0.125rem 0.25rem -0.0625rem;
+//     .chart {
+//       position: relative;
+//       top: -20px;
+//     }
+//     .title {
+//       margin-bottom: 1rem;
+//       h1 {
+//         font-size: 16px;
+//         font-weight: 700;
+//         color: #344767;
+//       }
+//       p {
+//         margin-top: 10px;
+//         font-size: 14px;
+//         font-weight: 300;
+//         color: #7b809a;
+//       }
+//     }
+//     .status {
+//       display: flex;
+//       align-items: center;
+//       gap: 5px;
+//       svg {
+//         width: 16px;
+//         color: #7b809a;
+//       }
+//       span {
+//         font-size: 14px;
+//         font-weight: 300;
+//         color: #7b809a;
+//       }
+//     }
+//   }
+//   .title {
+//     h1 {
+//       font-size: 16px;
+//       font-weight: 700;
+//       color: #344767;
+//     }
+//     .sub-title {
+//       display: flex;
+//       align-items: end;
+//       gap: 5px;
+//       p {
+//         margin-top: 10px;
+//         font-size: 14px;
+//         font-weight: 400;
+//         color: #7b809a;
+//       }
+//     }
+//   }
+//   .head-table {
+//     padding: 1.5rem 1.5rem 0;
+//     display: flex;
+//     justify-content: space-between;
+
+//     button {
+//       min-width: unset;
+//       svg {
+//         color: #344767;
+//       }
+//     }
+//   }
+//   .table {
+//     margin-top: 1rem;
+//     table {
+//       thead {
+//         tr {
+//           th {
+//             font-size: 11px;
+//             font-weight: 700;
+//             color: #7b809a;
+//           }
+//         }
+//       }
+//       tbody {
+//         tr {
+//           th {
+//             display: flex;
+//             align-items: center;
+//             gap: 10px;
+//             img {
+//               height: 100%;
+//               max-height: 36px;
+//             }
+//             font-size: 14px;
+//             font-weight: 600;
+//             color: rgb(52, 71, 103);
+//           }
+//           td {
+//             font-size: 12px;
+//             font-weight: 600;
+//             color: rgb(123, 128, 154);
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .timeline-box {
+//     .title {
+//       padding: 1.5rem 1.5rem 0;
+//       .sub-title {
+//         margin-top: 0.3rem;
+//       }
+//     }
+//     .timeline {
+//       padding: 2.5rem 0;
+//       svg {
+//         color: white;
+//       }
+//       span {
+//         font-size: 14px;
+//         font-weight: 600;
+//         color: #344767;
+//       }
+//       p {
+//         font-size: 12px;
+//         font-weight: 300;
+//         color: #344767;
+//       }
+//     }
+//   }
+// }
+
+section.billing {
+  .locate {
+    .detail {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      font-size: 14px;
+      color: #344767;
+      svg {
+        color: #34476790;
+        width: 24px;
+      }
+    }
+    h1 {
+      font-size: 16px;
+      color: #344767;
+    }
+  }
+  .mastercard{
+    padding: 1rem;
+    color: white;
+  }
+  .invoice{
+    a{
+      text-decoration: none;
+      color: #344767;
+      font-weight: 600;
+    }
+  }
+}

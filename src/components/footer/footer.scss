@@ -1,0 +1,30 @@
+.footer {
+  margin: 1.2rem 0 0rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #7b809a;
+
+  .credit {
+    a {
+      text-decoration: none;
+      color: #344767;
+    }
+  }
+  .footer-nav {
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+      li {
+        a {
+          padding: 10px;
+          color: #7b809a;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

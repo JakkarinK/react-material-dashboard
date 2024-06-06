@@ -1,0 +1,42 @@
+section.header {
+  position: sticky;
+  z-index: 99;
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #f0f2f5ef;
+  margin: 0 0 1rem 0;
+  .locate {
+    .detail {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      font-size: 14px;
+      color: #344767;
+      svg {
+        color: #34476790;
+        width: 24px;
+      }
+    }
+    h1 {
+      font-size: 16px;
+      color: #344767;
+    }
+  }
+  .options {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .user-tools {
+      display: flex;
+      gap: 1rem;
+      svg {
+        color: #34476790;
+        width: 24px;
+      }
+    }
+  }
+}
