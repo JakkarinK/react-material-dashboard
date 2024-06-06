@@ -1,4 +1,23 @@
 # React + Vite
+This project create for learing MUI Framework
+
+Use:
+- HTML
+- CSS
+- JavaScript
+- SCSS
+- MUI
+- ReactJS + Vite
+
+Lib:
+- chart.js
+- react-chartjs-2
+- icons-material
+- react-router-dom
+
+Use gh-pages to deploy this project
+
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
