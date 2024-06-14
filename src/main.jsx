@@ -26,19 +26,19 @@ const router = createBrowserRouter([
   },
   {
     path: "react-material-dashboard/tables",
-    element: <View name="dashboard" page={<Tables />}></View>,
+    element: <View name="tables" page={<Tables />}></View>,
   },
   {
     path: "react-material-dashboard/notifications",
-    element: <View name="dashboard" page={<Notifications />}></View>,
+    element: <View name="notifications" page={<Notifications />}></View>,
   },
   {
     path: "react-material-dashboard/billing",
-    element: <View name="dashboard" page={<Billing />} head={"d-none"}></View>,
+    element: <View name="billing" page={<Billing />} head={"d-none"}></View>,
   },
   {
     path: "react-material-dashboard/profile",
-    element: <View name="dashboard" page={<Profile />}></View>,
+    element: <View name="profile" page={<Profile />}></View>,
   },
   {
     path: "react-material-dashboard/sign-in",
