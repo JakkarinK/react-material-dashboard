@@ -65,7 +65,6 @@ const BarChart = (props) => {
 
   const graphStyle = {
     minHeight: "10rem",
-    maxWidth: "540px",
     width: "100%",
     border: "1px solid #fff",
     borderRadius: "10px",

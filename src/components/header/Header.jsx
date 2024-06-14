@@ -6,11 +6,11 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import SettingsIcon from "@mui/icons-material/Settings";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
-import {  IconButton } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 
 const Header = (props) => {
   return (
-    <section className="header">
+    <Box component={"section"} className="header" position={"sticky"} top={0}>
       <div className="locate">
         <div className="detail">
           <a href="../react-material-dashboard/dashboard">
@@ -30,7 +30,10 @@ const Header = (props) => {
             size="small"
           />
         </div>
-        <IconButton sx={{ display: { xs: "block", md: "none" } }}>
+        <IconButton
+          onClick={props.click}
+          sx={{ display: { xs: "block", lg: "none" } }}
+        >
           <MenuIcon />
         </IconButton>
         <div className="user-tools">
@@ -45,7 +48,7 @@ const Header = (props) => {
           </a>
         </div>
       </div>
-    </section>
+    </Box>
   );
 };
 

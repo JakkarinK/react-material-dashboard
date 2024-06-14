@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 
-import { Box } from "@mui/material";
+import { Box, Drawer } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 // icons
@@ -13,12 +13,11 @@ import PersonIcon from "@mui/icons-material/Person";
 import LoginIcon from "@mui/icons-material/Login";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 
-const Nav = (props) => {
+const Nav = () => {
   let activeClassName = "nav-active";
-  // const [openNav, setOpenNav] = useState(true);
 
   return (
-    <Box sx={{ display: { xs: "none", md: "block" } }}>
+    <Box>
       <nav>
         <a className="brand" href="../react-material-dashboard/dashboard">
           <h1>Material Dashboard 2</h1>

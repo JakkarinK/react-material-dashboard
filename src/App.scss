@@ -26,23 +26,7 @@ hr {
     rgba(52, 71, 103, 0)
   ) !important;
 }
-.grid {
-  display: grid;
-  grid-template: "n s" / calc(300px + 1rem);
-  gap: 1rem;
-}
-@media screen and (max-width: 900px){
-  .grid{
-    display: block;
-  }
-}
-nav {
-  grid-area: n;
-}
-section {
-  grid-area: s;
-  margin: 1rem;
-}
+
 .container {
   width: 100%;
 }

@@ -42,8 +42,8 @@ const LineChart = (props) => {
       },
       y: {
         grid: {
-            display: true,
-            color: "#c6c7c965",
+          display: true,
+          color: "#c6c7c965",
         },
         border: {
           display: false,
@@ -73,7 +73,6 @@ const LineChart = (props) => {
 
   const graphStyle = {
     minHeight: "10rem",
-    maxWidth: "540px",
     width: "100%",
     border: "1px solid #fff",
     borderRadius: "10px",

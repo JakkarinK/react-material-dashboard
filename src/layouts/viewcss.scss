@@ -1,0 +1,28 @@
+body{
+  padding: 0 !important;
+}
+.grid {
+  display: grid;
+  grid-template:
+    "n a"
+    "n s" / calc(300px + 1rem);
+  gap: 1rem;
+}
+@media screen and (max-width: 1200px) {
+  .grid {
+    display: block;
+  }
+}
+.n {
+  grid-area: n;
+}
+.a {
+  grid-area: a;
+  padding: 0 1rem;
+}
+.s {
+  grid-area: s;
+}
+.d-none{
+  display: none !important;
+}

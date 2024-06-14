@@ -13,32 +13,32 @@ import SignIn from "../../react-material-dashboard/src/pages/SignIn";
 import SignUp from "../../react-material-dashboard/src/pages/SignUp";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "./theme";
-
+import View from "./layouts/View";
 
 const router = createBrowserRouter([
   {
     path: "react-material-dashboard/",
-    element: <Dashboard />,
+    element: <View name="dashboard" page={<Dashboard />}></View>,
   },
   {
     path: "react-material-dashboard/dashboard",
-    element: <Dashboard />,
+    element: <View name="dashboard" page={<Dashboard />}></View>,
   },
   {
     path: "react-material-dashboard/tables",
-    element: <Tables />,
+    element: <View name="dashboard" page={<Tables />}></View>,
   },
   {
     path: "react-material-dashboard/notifications",
-    element: <Notifications />,
+    element: <View name="dashboard" page={<Notifications />}></View>,
   },
   {
     path: "react-material-dashboard/billing",
-    element: <Billing />,
+    element: <View name="dashboard" page={<Billing />} head={"d-none"}></View>,
   },
   {
     path: "react-material-dashboard/profile",
-    element: <Profile />,
+    element: <View name="dashboard" page={<Profile />}></View>,
   },
   {
     path: "react-material-dashboard/sign-in",
@@ -47,6 +47,10 @@ const router = createBrowserRouter([
   {
     path: "react-material-dashboard/sign-up",
     element: <SignUp />,
+  },
+  {
+    path: "react-material-dashboard/view",
+    element: <View name="dashboard" page={<Dashboard />}></View>,
   },
 ]);
 

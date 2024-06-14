@@ -6,12 +6,14 @@ import {
   FormControlLabel,
   Grid,
   Link,
+  Menu,
+  MenuItem,
   Paper,
   Switch,
   TextField,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/footer/Footer";
 
 import DonutLargeIcon from "@mui/icons-material/DonutLarge";
@@ -21,8 +23,17 @@ import KeyIcon from "@mui/icons-material/Key";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const SignIn = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <Box
       className="sign-in"
@@ -34,8 +45,7 @@ const SignIn = () => {
       justifyContent={"space-between"}
       m={0}
       sx={{
-        background:
-          "linear-gradient(195deg, rgba(66, 66, 74, 0.6), rgba(25, 25, 25, 0.6)) center center / cover no-repeat, url(src/assets/img/bg.jpeg) transparent;",
+        backgroundColor: "#1d1b1b",
       }}
     >
       <Container fixed>
@@ -56,7 +66,7 @@ const SignIn = () => {
           >
             Material Dashboard 2
           </Link>
-          <Box display={"flex"} gap={2.5}>
+          <Box gap={2.5} sx={{ display: { xs: "none", md: "flex" } }}>
             <Link
               href="../react-material-dashboard/dashboard"
               underline="none"
@@ -110,9 +120,98 @@ const SignIn = () => {
               Sign In
             </Link>
           </Box>
-          <Box width={200}></Box>
+          <Box width={200} sx={{ display: { xs: "none", md: "block" } }}></Box>
+          <Box sx={{ display: { xs: "block", md: "none" } }}>
+            <Button color="info" onClick={handleClick}>
+              <MenuIcon />
+            </Button>
+          </Box>
         </Box>
       </Container>
+
+      <Menu
+        anchorEl={anchorEl}
+        id="account-menu"
+        open={open}
+        onClose={handleClose}
+        onClick={handleClose}
+        transformOrigin={{ horizontal: "right", vertical: "top" }}
+        anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+        sx={{
+          "& .MuiPaper-root": {
+            m: "1rem auto 0 auto",
+            ml: { xs: 0, sm: "1rem" },
+            width: "550px",
+            borderRadius: "10px",
+          },
+        }}
+      >
+        <MenuItem sx={{ display: "block" }}>
+          <Link
+            href="../react-material-dashboard/dashboard"
+            underline="none"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 0.5,
+              color: "rgb(123, 128, 154)",
+              p: "5px 1rem",
+            }}
+          >
+            <DonutLargeIcon fontSize="small" />
+            Dashboard
+          </Link>
+        </MenuItem>
+        <MenuItem sx={{ display: "block" }}>
+          <Link
+            href="../react-material-dashboard/profile"
+            underline="none"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 0.5,
+              color: "rgb(123, 128, 154)",
+              p: "5px 1rem",
+            }}
+          >
+            <PersonIcon fontSize="small" />
+            Profile
+          </Link>
+        </MenuItem>
+        <MenuItem sx={{ display: "block" }}>
+          <Link
+            href="../react-material-dashboard/sign-up"
+            underline="none"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 0.5,
+              color: "rgb(123, 128, 154)",
+              p: "5px 1rem",
+            }}
+          >
+            <AccountCircleIcon fontSize="small" />
+            Sign Up
+          </Link>
+        </MenuItem>
+        <MenuItem sx={{ display: "block" }}>
+          <Link
+            href="../react-material-dashboard/sign-in"
+            underline="none"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 0.5,
+              color: "rgb(123, 128, 154)",
+              p: "5px 1rem",
+            }}
+          >
+            <KeyIcon fontSize="small" />
+            Sign In
+          </Link>
+        </MenuItem>
+      </Menu>
+
       <Container fixed>
         <Box
           display={"flex"}
@@ -121,7 +220,7 @@ const SignIn = () => {
           alignItems={"center"}
         >
           <Grid container justifyContent={"center"} alignItems={"center"}>
-            <Grid item>
+            <Grid item width={"100%"}  maxWidth={"480px"}>
               <Paper
                 elevation={0}
                 sx={{
@@ -132,10 +231,13 @@ const SignIn = () => {
               >
                 <Box
                   sx={{
+                    width: "100%",
+                    maxWidth: "400px",
                     color: "#FFF",
                     background:
                       "linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));",
-                    padding: "1rem 7rem",
+                    padding: "1rem 0",
+                    margin: "0 auto",
                     borderRadius: "10px",
                     position: "relative",
                     top: "-3rem",
@@ -150,6 +252,7 @@ const SignIn = () => {
                   </Typography>
                   <Box
                     sx={{
+                      width: "100%",
                       display: "flex",
                       justifyContent: "center",
                       gap: 5,

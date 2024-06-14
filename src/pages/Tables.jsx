@@ -1,6 +1,4 @@
 import React from "react";
-import Nav from "../components/navbar/Nav";
-import Header from "../components/header/Header";
 import AuthorTable from "../components/tables/AuthorTable";
 import ProjectTable from "../components/tables/ProjectTable";
 import Footer from "../components/footer/Footer";
@@ -22,24 +20,19 @@ const HeadTitle = styled(Box)({
 });
 const Tables = () => {
   return (
-    <div className="grid">
-      <Nav />
-      <section className="tables">
-        <div className="container">
-          <Header name={"Tables"} />
-
-          <Box mt={10} sx={{ backgroundColor: "#fff", borderRadius: "10px" }}>
-            <HeadTitle>Authors Table</HeadTitle>
-            <AuthorTable />
-          </Box>
-          <Box mt={10} sx={{ backgroundColor: "#fff", borderRadius: "10px" }}>
-            <HeadTitle>Projects Table</HeadTitle>
-            <ProjectTable />
-          </Box>
-          <Footer />
-        </div>
-      </section>
-    </div>
+    <section className="tables">
+      <div className="container">
+        <Box mt={10} sx={{ backgroundColor: "#fff", borderRadius: "10px" }}>
+          <HeadTitle>Authors Table</HeadTitle>
+          <AuthorTable />
+        </Box>
+        <Box mt={10} sx={{ backgroundColor: "#fff", borderRadius: "10px" }}>
+          <HeadTitle>Projects Table</HeadTitle>
+          <ProjectTable />
+        </Box>
+        <Footer />
+      </div>
+    </section>
   );
 };
 
