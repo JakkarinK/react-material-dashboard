@@ -86,7 +86,7 @@ const Billing = () => {
         sx={{ mb: { xs: 2, md: 2 }, mt: { xs: 2, md: 0 } }}
       >
         <div className="detail">
-          <Link underline="none" href="../react-material-dashboard/dashboard">
+          <Link underline="none" href="../react-material-dashboard/">
             <HomeIcon />
           </Link>
           <p>/</p>

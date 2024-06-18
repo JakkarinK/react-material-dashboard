@@ -73,7 +73,7 @@ const SignUp = () => {
             </Link>
             <Box sx={{ display: { xs: "none", md: "flex" } }} gap={2.5}>
               <Link
-                href="../react-material-dashboard/dashboard"
+                href="../react-material-dashboard/"
                 underline="none"
                 sx={{
                   display: "flex",
@@ -154,7 +154,7 @@ const SignUp = () => {
       >
         <MenuItem sx={{ display: "block" }}>
           <Link
-            href="../react-material-dashboard/dashboard"
+            href="../react-material-dashboard/"
             underline="none"
             sx={{
               display: "flex",

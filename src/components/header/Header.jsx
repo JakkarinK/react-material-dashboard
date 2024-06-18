@@ -13,7 +13,7 @@ const Header = (props) => {
     <Box component={"section"} className="header" position={"sticky"} top={0}>
       <div className="locate">
         <div className="detail">
-          <a href="../react-material-dashboard/dashboard">
+          <a href="../react-material-dashboard/">
             <HomeIcon />
           </a>
           <p>/</p>

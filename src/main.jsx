@@ -21,10 +21,6 @@ const router = createBrowserRouter([
     element: <View name="dashboard" page={<Dashboard />}></View>,
   },
   {
-    path: "react-material-dashboard/dashboard",
-    element: <View name="dashboard" page={<Dashboard />}></View>,
-  },
-  {
     path: "react-material-dashboard/tables",
     element: <View name="tables" page={<Tables />}></View>,
   },

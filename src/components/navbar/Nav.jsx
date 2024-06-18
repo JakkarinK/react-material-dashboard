@@ -19,12 +19,13 @@ const Nav = () => {
   return (
     <Box>
       <nav>
-        <a className="brand" href="../react-material-dashboard/dashboard">
+        <a className="brand" href="../react-material-dashboard/">
           <h1>Material Dashboard 2</h1>
         </a>
         <hr />
         <NavLink
-          to={"../react-material-dashboard/dashboard"}
+          to={"../react-material-dashboard/"}
+          end
           className={({ isActive }) => (isActive ? activeClassName : undefined)}
         >
           <div className="item">
